@@ -1,18 +1,139 @@
-/**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
-
-*/
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
+    margin: 0 auto;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    background-color: white;
+    line-height: 1.4;
+
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 16px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 24px;
+}
+
+h4 {
     margin: 0;
+}
+
+h5{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 24px 0 0;
+}
+
+.hero-section, .attraction-section, .guide-section {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    background-image: url("images/klcc.jpg");
+    background-size: cover;
+    height: 400px;
+    padding: 0 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.place {
+    background-color: #09313A;
+    padding: 4px 16px;
+    border-radius: 8px;
+}
+
+.attraction-section {
+    padding: 40px;
+}
+
+.attraction-box {
+    background-color: #DEF5FD;
+    padding: 24px 32px;
+    border-radius: 16px;
+}
+
+.attractions-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.col {
+    flex: 1;
+    min-width: 167px;
+    max-width: 200px;
     text-align: center;
 }
 
-img {
-    width: 100px;
+.guide-section {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.johan-img {
+    flex: 0 0 142px;
+}
+
+.johan-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.guide-card {
+    background-color: #DEF5FD;
+    width: 100%;
+    max-width: 464px;
+    height: 236px;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+}
+
+.guide-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+}
+
+#guide-copy {
+    margin: 0 0 16px;
 }
